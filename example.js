@@ -9,7 +9,7 @@ function main() {
 			   .attr("x", 50)
 			   .attr("y", 50)
 			   .attr("font-size", "24px")
-			   .text("Stock Price")
+			   .text("Stock Pricessss")
 		
 			var xScale = d3.scaleBand().range([0, width]).padding(0.4),
 				yScale = d3.scaleLinear().range([height, 0]);
