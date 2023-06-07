@@ -9,7 +9,7 @@ function main() {
 			   .attr("x", 50)
 			   .attr("y", 50)
 			   .attr("font-size", "24px")
-			   .text("xxx Stock Pricessss")
+			   .text("bosta Stock Pricessss")
 		
 			var xScale = d3.scaleBand().range([0, width]).padding(0.4),
 				yScale = d3.scaleLinear().range([height, 0]);
@@ -17,7 +17,7 @@ function main() {
 			var g = svg.append("g")
 					.attr("transform", "translate(" + 100 + "," + 100 + ")");
 		
-			d3.csv("https://github.com/SantanaLauro/Dashboard/blob/ccc9c39d26dccf0fe521235ea109ebda340c3caf/stock_values.csv").then( function(data) {
+			d3.csv("https://raw.githubusercontent.com/SantanaLauro/Dashboard/a70a934e3f46124819ced19d7ba2c788c78a5938/stock_values.csv").then( function(data) {
 				xScale.domain(data.map(function(d) { return d.year; }));
 				yScale.domain([0, d3.max(data, function(d) { return d.value; })]);
 		
