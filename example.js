@@ -17,7 +17,7 @@ function main() {
 			var g = svg.append("g")
 					.attr("transform", "translate(" + 100 + "," + 100 + ")");
 		
-			d3.csv("../data/stock_values.csv").then( function(data) {
+			d3.csv("https://github.com/SantanaLauro/Dashboard/blob/ccc9c39d26dccf0fe521235ea109ebda340c3caf/stock_values.csv").then( function(data) {
 				xScale.domain(data.map(function(d) { return d.year; }));
 				yScale.domain([0, d3.max(data, function(d) { return d.value; })]);
 		
